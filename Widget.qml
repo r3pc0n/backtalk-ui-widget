@@ -4,7 +4,7 @@ import Quickshell
 import qs.Commons
 import qs.Ui
 
-// aura.call — a bar icon that opens a small collapsible panel: live/idle
+// backtalk.call — a bar icon that opens a small collapsible panel: live/idle
 // status, Start Call, a native-QML transcript + typed-input box, and the
 // same model/effort/voice/STT/volume/hang-up controls the full Backtalk-UI
 // page has (all of which turned out to just be canned phrases posted
@@ -14,8 +14,8 @@ import qs.Ui
 // idle-vs-live and carry the transcript on port 8793.
 Panel {
   id: root
-  moduleName: "aura.call"
-  ipcTarget: "aura.call"
+  moduleName: "backtalk.call"
+  ipcTarget: "backtalk.call"
   manageIpc: false
 
   readonly property string statusUrl: "http://127.0.0.1:8793/api/transcript"
@@ -50,10 +50,10 @@ Panel {
   }
 
   function tooltip() {
-    if (root.launchFailed) return "Aura — launch failed, click to retry"
-    if (root.live) return "Aura — call live, click to open"
-    if (root.starting) return "Aura — starting…"
-    return "Aura — click to open"
+    if (root.launchFailed) return "Backtalk — launch failed, click to retry"
+    if (root.live) return "Backtalk — call live, click to open"
+    if (root.starting) return "Backtalk — starting…"
+    return "Backtalk — click to open"
   }
 
   function fetchJson(url, onSuccess, onError, method, body) {
@@ -225,7 +225,7 @@ Panel {
           Text {
             anchors.left: parent.left
             anchors.verticalCenter: parent.verticalCenter
-            text: root.live ? "Aura — live" : (root.starting ? "Aura — starting…" : "Aura")
+            text: root.live ? "Backtalk — live" : (root.starting ? "Backtalk — starting…" : "Backtalk")
             color: root.foreground
             font.family: root.bar ? root.bar.fontFamily : Style.font.family
             font.pixelSize: Style.font.body

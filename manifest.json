@@ -1,11 +1,11 @@
 {
   "schemaVersion": 1,
-  "id": "aura.call",
-  "name": "Aura Call",
+  "id": "backtalk.call",
+  "name": "Backtalk Call",
   "version": "1.0.0",
   "author": "r3pc0n",
   "license": "MIT",
-  "description": "Shows whether a voice session with Aura is live, and doubles as a Start Call button.",
+  "description": "Shows whether a backtalk voice session is live, and doubles as a Start Call button.",
   "kinds": [
     "bar-widget"
   ],
@@ -13,11 +13,11 @@
     "barWidget": "Widget.qml"
   },
   "barWidget": {
-    "displayName": "Aura Call",
-    "description": "Live/idle indicator for Aura voice sessions, and a Start Call button.",
+    "displayName": "Backtalk Call",
+    "description": "Live/idle indicator for backtalk voice sessions, and a Start Call button.",
     "category": "AI",
     "aliases": [
-      "aura",
+      "backtalk",
       "call",
       "voice"
     ],

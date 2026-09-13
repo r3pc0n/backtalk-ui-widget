@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Clicking the aura.call widget while a call is live should show the
+# Clicking the backtalk.call widget while a call is live should show the
 # transcript page Youri already has open in Chromium (installed as a
 # webapp via Backtalk-UI.desktop / omarchy-launch-webapp), not spawn a
 # second window in his default browser. Chromium gives every 127.0.0.1

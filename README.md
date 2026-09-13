@@ -1,4 +1,4 @@
-# Aura Call (Omarchy bar widget)
+# Backtalk Call (Omarchy bar widget)
 
 A Quickshell bar widget for Omarchy: shows whether a voice call with your
 [backtalk](https://github.com/jaredrhod/backtalk) agent is live, and opens a
@@ -33,14 +33,14 @@ leaving the bar.
 ## Install
 
 ```sh
-omarchy plugin add git@github.com:r3pc0n/aura-call-widget.git --enable --yes
+omarchy plugin add git@github.com:r3pc0n/backtalk-ui-widget.git --enable --yes
 ```
 
 Or manually:
 
 ```sh
-git clone git@github.com:r3pc0n/aura-call-widget.git ~/.config/omarchy/plugins/aura.call
-omarchy plugin enable aura.call right
+git clone git@github.com:r3pc0n/backtalk-ui-widget.git ~/.config/omarchy/plugins/backtalk.call
+omarchy plugin enable backtalk.call right
 omarchy-restart-shell
 ```
 
